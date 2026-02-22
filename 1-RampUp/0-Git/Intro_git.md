@@ -123,3 +123,84 @@ En donde `<branch>` es el nombre del branch que quieres subir. Si estás trabaja
 - [Tutorial interactivo de Git](https://learngitbranching.js.org/)
 
 Espero que esta introducción te haya ayudado a entender qué es Git y GitHub y por qué son herramientas tan importantes para el desarrollo de software y la ciencia de datos. ¡Ahora estás listo para empezar a utilizar Git y GitHub en tus propios proyectos!
+
+
+---
+
+# Anexo: Guía de Sincronización del Repositorio de Clase
+
+Para seguir el curso, no descargaremos el material manualmente. Utilizaremos un flujo de trabajo con **Git** que te permitirá:
+
+1. Tener tu propia copia del material en tu cuenta de GitHub (**Fork**).
+2. Bajarte el material nuevo que el profesor suba cada día sin borrar tus apuntes.
+3. Subir tus ejercicios resueltos a tu propio perfil.
+
+## 1. Configuración Inicial (Solo una vez)
+
+Sigue estos pasos el primer día:
+
+1. **Hacer el Fork**: Ve al repositorio del profesor ([ENLACE AQUÍ](https://github.com/TheBridge-BBK-Bootcamps/2026-02-BILBAO-FT-Data-Science.git)) y haz clic en el botón **"Fork"** (arriba a la derecha). Esto creará una copia en tu cuenta de GitHub.
+2. **Clonar TU fork**: Abre la terminal en tu ordenador y clona **tu** repositorio (sustituye `TU_USUARIO` por tu nombre de usuario de GitHub):
+
+   ```bash
+   git clone https://github.com/TU_USUARIO/2026-02-BILBAO-FT-Data-Science.git
+   ```
+3. **Entrar en la carpeta**:
+
+   ```bash
+   cd 2026-02-BILBAO-FT-Data-Science
+   ```
+4. **Vincular el repositorio del profesor (Upstream)**:
+   Para poder recibir las actualizaciones del profesor, debes añadir su repositorio como una fuente remota adicional llamada `upstream`:
+
+   ```bash
+   git remote add upstream https://github.com/TheBridge-BBK-Bootcamps/2026-02-BILBAO-FT-Data-Science.git
+   ```
+5. **Verificar la configuración**:
+   Ejecuta `git remote -v`. Deberías ver algo como esto:
+
+   * `origin` -> apunta a **tu** cuenta (donde subirás tus cosas).
+   * `upstream` -> apunta a la cuenta de **The Bridge** (de donde bajarás el material).
+
+## 2. Rutina Diaria (Al empezar cada clase)
+
+Para bajarte el material nuevo que el profesor haya subido por la mañana o durante el descanso, ejecuta estos comandos en orden:
+
+```bash
+# 1. Asegúrate de estar en la rama principal y tener tus cambios guardados (commit)
+git checkout main
+
+# 2. Descarga las novedades del profesor
+git fetch upstream
+
+# 3. Fusiona esas novedades en tu código local
+git merge upstream/main --no-edit
+
+# 4. (Opcional) Actualiza tu GitHub personal
+git push origin main
+```
+
+## 3. Evita conflictos
+
+Si modificas el mismo archivo que el profesor actualiza, Git se confundirá y tendrás un "conflicto de versiones". Para evitarlo, sigue estos consejos:
+
+1. **Crea copias para tus notas**: Si el profesor sube un archivo llamado `clase_01.ipynb`, **no escribas directamente en él**. Haz una copia (ej: `clase_01_NOTAS_JUAN.ipynb`) y trabaja sobre esa copia.
+2. **Carpeta Personal**: Es muy recomendable que crees una carpeta con tu nombre (ej: `/students/tu_nombre/`) y guardes ahí todos tus ejercicios y retos. Git nunca dará conflicto si trabajas en archivos que no existen en el repositorio original.
+3. **Haz Commit antes de actualizar**: Antes de hacer el `git merge upstream/main`, asegúrate de haber guardado tus cambios con:
+   ```bash
+   git add .
+   git commit -m "Mis notas del día"
+   ```
+
+## 4. ¿Qué hacer si aparece un CONFLICTO?
+
+Si al hacer `merge` ves un mensaje que dice `CONFLICT (content): Merge conflict in...`:
+
+1. Abre el archivo indicado en **VS Code**.
+2. Verás que el texto aparece resaltado en colores con las opciones: *Accept Current Change* (lo tuyo) o *Accept Incoming Change* (lo del profesor).
+3. Elige la opción que prefieras (normalmente *Incoming* para el material del profesor).
+4. Guarda el archivo y finaliza el proceso en la terminal:
+   ```bash
+   git add .
+   git commit -m "Resolviendo conflictos"
+   ```
