@@ -1,0 +1,21 @@
+
+
+POWER-BI
+
+es como excel, absorbe datos de todos los sitios. Millones de datos, se puede colgar. Se generan filtros.
+
+Power-query: 
+
+Power bi es para realizar informes sobre datos, dashboards. Compartir en plataformas.
+Fuentes, SQL, csv, internet, amazon, pdf...
+
+Es gratis. Con IA tiene un coste.
+Licencias: 
+-desktop (gratis, no compartir ni colgar), 
+-pro, comparte informes con ususarios con licencia, 10€/mes  
+-premium, para ~500 usuarios, para empresas
+-embedded, para ~500 usuarios, para incrustar informes en pag web
+-report server, instalacion on premise. Usa servidores de cada empresa.
+
+
+Powerpivot se hizo para añadir a excel y poder manejar grandes datos.
