@@ -1,0 +1,6 @@
+-- Find the name of the company that placed order 10290.
+SELECT CompanyName
+FROM Customers
+WHERE CustomerID = (SELECT CustomerID
+			FROM Orders
+			WHERE OrderID = 10290);        --query dentro de otra query

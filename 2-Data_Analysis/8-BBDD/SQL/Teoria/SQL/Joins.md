@@ -9,7 +9,7 @@ Orders table can be joined to the Customers table with column CustomerID (Foreig
 So, if we would like to know the name of the company behind each order we could write:
 
 ```sql
-SELECT Orders.OrderID, Customers.CompanyName, Orders.OrderDate
+SELECT Orders.OrderID, Customers.CompanyName, Orders.OrderDate				##select* ,  selecciona todo
 FROM Customers
 	INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID
 ORDER BY Customers.CompanyName; 
