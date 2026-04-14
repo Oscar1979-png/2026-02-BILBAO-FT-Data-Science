@@ -2,7 +2,7 @@
 
 ---
 
-## 1. Tablas de la Base de Datos
+## 1. Tablas de la Base de Datos            ##crear tabla, cabeceras y meter datos
 
 ### CERVEZAS
 | CodC | Envase | Capacidad | Stock |

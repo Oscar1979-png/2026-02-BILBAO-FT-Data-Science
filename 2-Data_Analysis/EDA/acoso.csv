@@ -1,0 +1,35 @@
+﻿"Año";"Periodo";"Parámetro";"Ambos sexos";"Chicas";"Chicos"
+"2016";"Año";"Ciberacoso";"6,90";"8,50";"5,30"
+"2016";"Año";"Acoso";"9,30";"10,60";"8"
+;;;;
+;;;;
+"Métrica":"Ambos sexos"
+"Fuente":"Save The Children"
+"Clasificación":""
+"Unidad":"Porcentaje (%) de respuestas afirmativas"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;;
+;;;;
+"Métrica":"Chicas"
+"Fuente":"Save The Children"
+"Clasificación":""
+"Unidad":"Porcentaje (%) de respuestas afirmativas"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;;
+;;;;
+"Métrica":"Chicos"
+"Fuente":"Save The Children"
+"Clasificación":""
+"Unidad":"Porcentaje (%) de respuestas afirmativas"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;;
+;;;;
+"Url":"https://www.epdata.es/ciberacoso-superior-ninas-ninos/88ea4980-b41f-49a7-b01b-d677c52473dc"
+"Titulo":"Las chicas reconocen haberse visto más veces afectadas por el ciberacoso que los chicos"
+"Subtitulo":"(durante los últimos 2 meses)"

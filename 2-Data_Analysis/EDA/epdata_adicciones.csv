@@ -1,0 +1,26 @@
+﻿"Año";"Periodo";"Parámetro";"Españoles";"Ingleses / Americanos"
+"2019";"Año";"Estrictos";"36";"47"
+"2019";"Año";"Flexibles";"64";"53"
+;;;
+;;;
+"Métrica":"Españoles"
+"Fuente":"Qustodio / Ipsos"
+"Clasificación":""
+"Unidad":"%"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;
+;;;
+"Métrica":"Ingleses / Americanos"
+"Fuente":"Qustodio / Ipsos"
+"Clasificación":""
+"Unidad":"%"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;;
+;;;
+"Url":"https://www.epdata.es/son-mas-estrictos-padres-espanoles-anglosajones/52c3294b-61d1-419c-a949-0e7271e30688"
+"Titulo":"¿Son más estrictos los padres españoles o los anglosajones?"
+"Subtitulo":"Una encuesta encontró más flexibles a los españoles"

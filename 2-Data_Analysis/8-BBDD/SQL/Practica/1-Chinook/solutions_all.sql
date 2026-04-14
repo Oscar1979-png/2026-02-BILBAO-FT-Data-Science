@@ -23,7 +23,7 @@ INNER JOIN artists ON artists.ArtistId = albums.ArtistId
 WHERE artists.Name = "AC/DC";
 
 -- exercise 4
-SELECT firstname || " " || lastname AS Nombre_completo,
+SELECT firstname || " " || lastname AS Nombre_completo,  ##las barras concatenan los strings
 customerid AS ID,
 country AS País
 FROM customers
@@ -38,7 +38,7 @@ FROM employees
 WHERE title = "Sales Support Agent"
 
 --exercise 6
-SELECT DISTINCT
+SELECT DISTINCT     ##paises que no se repitan
 billingcountry
 FROM invoices;
 
@@ -89,7 +89,7 @@ ORDER BY 2 DESC
 
 --12
 SELECT
-strftime("%Y", invoicedate) AS Año,
+strftime("%Y", invoicedate) AS Año,  ##seleccionamos solo YYYY de la fecha
 COUNT(invoiceid)
 FROM invoices
 WHERE Año IN ("2009","2011")
@@ -127,7 +127,7 @@ c.firstname || " " || c.lastname AS Nombre_cliente,
 i.invoiceid AS Id_factura,
 i.invoicedate AS Fecha_factura,
 i.billingcountry AS Pais_factura
-FROM invoices i
+FROM invoices id
 INNER JOIN customers c ON i.customerid = c.customerid
 WHERE c.country = "Brazil"
  
@@ -201,7 +201,7 @@ INNER JOIN employees e ON c.supportrepid = e.employeeid
 WHERE strftime("%Y", i.invoicedate) = "2009"
 GROUP BY 1
 ORDER BY 2 DESC
---LIMIT 1
+--LIMIT 1           ##con limit 1 da solo el primer valor, mejor no usar porque podria haber dos con valor igual
 
 --9
 SELECT
@@ -215,5 +215,5 @@ INNER JOIN albums a ON t.albumid = a.albumid
 INNER JOIN artists ar ON a.artistid = ar.ArtistId
 GROUP BY 1,2
 ORDER BY 3 DESC
---LIMIT 3
+--LIMIT 3               ##salen  los 3 primeros de la busqueda
 
