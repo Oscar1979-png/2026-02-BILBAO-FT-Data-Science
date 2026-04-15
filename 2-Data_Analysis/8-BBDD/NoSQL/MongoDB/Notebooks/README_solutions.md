@@ -6,7 +6,7 @@ READ
 1. Mostrar todos los documentos de la colección restaurantes
    db["2026-02-test"].find();
 2. Mostrar los campos restaurant_id, nombre, distrito y cocina, pero excluya el campo _id para todos los documentos de la colección restaurantes
-   db["2026-02-test"].find({},{"restaurant_id" : 1,"name":1,"borough":1,"cuisine" :1,"_id":0});
+   db["2026-02-test"].find({},{"restaurant_id" : 1,"name":1,"borough":1,"cuisine" :1,"_id":0});     ##0 para que no lo muestre
 3. Mostrar los primeros 5 restaurantes que se encuentran en el distrito Bronx
    db["2026-02-test"].find({"borough": "Bronx"}).limit(5);
 4. Encontrar los restaurantes que lograron una puntuación superior a 80 pero inferior a 100
