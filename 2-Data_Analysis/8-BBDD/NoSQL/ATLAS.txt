@@ -1,3 +1,5 @@
 ATLAS
 
-Igual que mongo pero 
+Igual que mongo pero los database están en la nube.
+Desde mongo compass se puede conectar a atlas.
+Da una URL para pegar en compass.
