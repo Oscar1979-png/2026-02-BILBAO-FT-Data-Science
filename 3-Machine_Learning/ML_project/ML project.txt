@@ -1,0 +1,13 @@
+ML Project
+
+4 mayo, presentación del tema
+14 mayo, presentación del proyecto
+
+Probar varios modelos: varios, no quedarse con el primero
+
+Presentación y código para público técnico.
+
+
+-feature importance
+
+Presentación tipo canva
