@@ -1,0 +1,14 @@
+Competiciones de ML de kaggle
+
+
+Final: martes 28 de abril.
+
+
+Datos en un csv y hacer un modelo predictivo.
+
+train.csv, entrenar aquí e modelo. Tiene columna de precios.
+test.csv no lleva el precio.
+sample.csv, tiene predicciones muy malas, pero es un ejemplo.
+
+Resultado: csv con dos columnas, id y precio.
+<200 MAE, ok. <100 MAE, es posible.
