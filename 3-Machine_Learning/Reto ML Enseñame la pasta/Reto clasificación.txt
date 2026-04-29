@@ -1,0 +1,13 @@
+Reto clasificación
+
+
+Enseñame la pasta
+
+Prestamos bancarios.
+
+Features: conseguir la mejor metrica: AUC curva ROC es la metrica
+
+Predice 0 o 1: devuelve o no devuelve el préstamo. ID de cliente es necesario para identificar bien a los clientes.
+
+Fin: 5 de mayo
+
