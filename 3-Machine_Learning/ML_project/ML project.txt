@@ -13,3 +13,6 @@ Presentación y código para público técnico.
 Presentación tipo canva
 
 
+	REGRESION Y CLASIFICACION ---- mirar ambos
+
+
