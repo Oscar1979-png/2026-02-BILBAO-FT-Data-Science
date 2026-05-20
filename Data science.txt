@@ -1,0 +1,36 @@
+La data science es un campo interdisciplinario que combina estadística, matemáticas, programación, inteligencia artificial y análisis avanzado para extraer conocimiento útil a partir de datos, tanto estructurados como no estructurados. Su propósito es transformar datos brutos en información accionable, predicciones y decisiones automatizadas. 
+
+
+Componentes clave
+Estadística y matemáticas → para modelar y entender patrones.
+
+Programación (Python, R) → para manipular datos y construir modelos.
+
+Machine Learning / Deep Learning → para predicciones y automatización.
+
+Conocimiento del negocio → para convertir datos en decisiones reales.
+
+
+Ciclo de vida típico
+Recopilación de datos (bases de datos, APIs, SQLs, sensores, redes sociales).
+
+Limpieza y preparación (ETL, tratamiento de valores faltantes, normalización).
+
+Exploración y visualización (EDA).
+
+Modelado predictivo (machine learning).
+
+Comunicación de resultados (dashboards, informes, recomendaciones).
+
+Aplicaciones reales
+Salud: predicción de enfermedades.
+
+Finanzas: detección de fraude.
+
+Marketing: segmentación de clientes.
+
+Industria: mantenimiento predictivo.
+
+
+En resumen
+La data science es el arte y la ciencia de convertir datos en valor, combinando técnicas analíticas avanzadas con tecnología y conocimiento del dominio para entender, predecir y automatizar procesos en prácticamente cualquier sector.
